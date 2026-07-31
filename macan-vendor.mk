@@ -947,6 +947,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/SKhynix-HN8T271EJKX152.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SKhynix-HN8T271EJKX152.bin \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/ufs_version_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/ufs/ufs_version_config.xml \
+    vendor/oneplus/macan/proprietary/odm/lib/libsensorbridge.so:$(TARGET_COPY_OUT_ODM)/lib/libsensorbridge.so \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n00.sm8845.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n00.sm8845.bin \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n01.sm8845.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n01.sm8845.bin \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n02.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n02.bin \
@@ -1506,7 +1507,6 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
-    libsensorbridge \
     libQnnHtpV81Skel.signed.aiframe \
     libwechatsrubwc_skel \
     libQnnHtpV81Skel.unsigned.aiframe \
@@ -1684,6 +1684,7 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libsat \
     libsaveshaderbin \
+    libsensorbridge \
     libsharebuffer \
     libssd_det \
     libtensorflowlite_oplus \

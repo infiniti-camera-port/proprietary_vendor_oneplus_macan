@@ -65,6 +65,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Dark_Eye_Protect_LsRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Dark_Eye_Protect_LsRGB.txt \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Dark_Eye_Protect_Nature.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Dark_Eye_Protect_Nature.txt \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Dark_Eye_Protect_Vivid.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Dark_Eye_Protect_Vivid.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_COMP3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_COMP3.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_ColorInvert_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_ColorInvert_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_FPS.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_FPS.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_FPS_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_FPS_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_HighDynamicRange_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_HighDynamicRange_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_MOBA.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_MOBA.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_MOBA_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_MOBA_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_NightVision_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_NightVision_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_OTOME.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_OTOME.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_OTOME_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_OTOME_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_OldMovie_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_OldMovie_Fliter.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_RPG.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_RPG.txt \
+    vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Game_Vivid_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_Vivid_Fliter.txt \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Lut3D_311:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_311 \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/Lut3D_312:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_312 \
     vendor/oneplus/macan/proprietary/odm/etc/PanelChaplin/panelchaplin:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/panelchaplin \
@@ -934,6 +947,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/SKhynix-HN8T271EJKX152.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SKhynix-HN8T271EJKX152.bin \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
     vendor/oneplus/macan/proprietary/odm/firmware/ufs/ufs_version_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/ufs/ufs_version_config.xml \
+    vendor/oneplus/macan/proprietary/odm/lib/libsensorbridge.so:$(TARGET_COPY_OUT_ODM)/lib/libsensorbridge.so \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n00.sm8845.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n00.sm8845.bin \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n01.sm8845.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n01.sm8845.bin \
     vendor/oneplus/macan/proprietary/odm/lib64/bm6a81v04s14n02.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm6a81v04s14n02.bin \
@@ -1429,7 +1443,6 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmfGhostDetection \
     libmfec \
-    libmidasserviceintf \
     libmidasserviceintf_aidl \
     libmmcamera_bestats \
     libmmcamera_cac \
@@ -1492,7 +1505,6 @@ PRODUCT_PACKAGES += \
     libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
-    vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     libQnnHtpV81Skel.signed.aiframe \
@@ -1527,6 +1539,7 @@ PRODUCT_PACKAGES += \
     libcamxoemsatsoftwarefusionwrapper \
     libcamxoemsatwrapper \
     com.oplus.mcx.linearmapper \
+    camera.oemlayer.v2 \
     lib2DSlender \
     libAECParamParser \
     libAF \
@@ -1671,6 +1684,7 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libsat \
     libsaveshaderbin \
+    libsensorbridge \
     libsharebuffer \
     libssd_det \
     libtensorflowlite_oplus \
